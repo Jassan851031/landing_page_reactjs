@@ -1,5 +1,6 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const webpack = require('webpack');
 module.exports = {
     context: __dirname,
     entry: './src/index.js',
@@ -31,6 +32,12 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: path.resolve(__dirname, 'public/index.html'),
             filename: './index.html'
-        })
+        }),
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.ProvidePlugin({
+            '$': "jquery",
+            'jQuery': "jquery",
+            'Popper': 'popper.js'
+        }),
     ]
 };

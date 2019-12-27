@@ -20,7 +20,7 @@ const App = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <Jumbotron />
+                        <Jumbotron title="A Warm Welcome!" text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat." btn="Learn more" />
                     </div>
                 </div>
 
