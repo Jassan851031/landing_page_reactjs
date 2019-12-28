@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/navbar';
-import Jumbotron from './jumbotron';
+import Jumbotron from './components/jumbotron';
 import Cards from './components/cards';
 import Footer from './components/Footer';
 
@@ -42,7 +42,6 @@ const App = (props) => {
                     </div>
                 </div>
             </div>
-
             <Footer textfooter="Copyright © My Website 2019" />
         </>
     );
